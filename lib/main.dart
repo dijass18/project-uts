@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-// import 'package:news_app/app_styles.dart';
+import 'package:news_app/app_styles.dart';
 import 'package:news_app/size_config.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-// import 'package:news_app/ui/pages/home_page.dart';
-// import 'package:news_app/ui/pages/news_detail_page.dart';
-// import 'package:news_app/ui/pages/profile_page.dart';
-// import 'package:news_app/ui/widgets/home_card_item.dart';
+import 'package:news_app/ui/pages/home_page.dart';
+import 'package:news_app/ui/pages/news_detail_page.dart';
+import 'package:news_app/ui/pages/profile_page.dart';
+import 'package:news_app/ui/widgets/home_card_item.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,12 +31,12 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        // backgroundColor: kLighterWhite,
-        // body: const HomeScreen(),
+        backgroundColor: kLighterWhite,
+        body: const HomeScreen(),
         bottomNavigationBar: BottomNavigationBar(
           elevation: 0,
           type: BottomNavigationBarType.fixed,
-          // backgroundColor: kWhite,
+          backgroundColor: kWhite,
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: _selectedIndex == 0
@@ -68,8 +68,8 @@ class _MyAppState extends State<MyApp> {
         ),
       ),
       routes: {
-        // '/detail-news': (context) => const NewsDetailPage(),
-        // '/profile': (context) => const ProfilePage(),
+        '/detail-news': (context) => const NewsDetailPage(),
+        '/profile': (context) => const ProfilePage(),
       },
     );
   }
